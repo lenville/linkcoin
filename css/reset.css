@@ -1,0 +1,118 @@
+/*ios safari 中 从 portrait 转到 landscape 会导致字体大小调整，通过设置 text-size-adjust 可防止调整（现实为仍然少量调整，双击恢复正常）*/
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	/*font-size: 100%;
+	font: inherit;*/
+	vertical-align: baseline;
+}
+
+/*中文最好用unicode表示，比如使用宋体是{font-family:\5b8b\4f53;}，使用微软雅黑是{font-family:\5fae\8f6f\96c5\9ed1;}*/
+body { 
+	font-size: 12px;
+	color: #DDD;
+	font-family: \5fae\8f6f\96c5\9ed1, Arial, Helvetica, sans-serif;
+	background: none repeat scroll 0 0 #fff;
+}
+
+/**
+ * @modules	CSS Layout
+ */
+
+/* 隐藏 */
+.hidden { display: none !important; }
+.invisible { visibility: hidden !important; }
+
+/* 清浮动 */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+
+/* inline block */
+.inline-block { 
+	display: inline-block; 
+	*display: inline;
+}
+
+.row-box{
+	display:-webkit-box;
+	display:-moz-box;
+	display:-o-box;
+	display:box;
+}
+
+.row-table{
+	display: table;
+	margin: 0 auto;
+}
+
+.row-left{
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	box-orient: horizontal;
+	-webkit-box-pack: start;
+	-moz-box-pack: start;
+	box-pack: start;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	box-align: center;
+}
+
+.row-center{
+	-webkit-box-orient: horizontal;
+	-moz-box-orient: horizontal;
+	box-orient: horizontal;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	box-pack: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	box-align: center;
+}
+
+.row-right{
+	-webkit-box-orient: horizontal
+	-moz-box-orient: horizontal;
+	box-orient: horizontal;
+	-webkit-box-pack: end;
+	-moz-box-pack: end;
+	box-pack: end;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	box-align: center;
+}
+
+.td{
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-o-box-flex: 1;
+	box-flex: 1;
+}

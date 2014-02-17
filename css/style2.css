@@ -1,0 +1,981 @@
+body{	
+	margin:0;
+	padding:0; 
+	/*font-size:12em; */
+	line-height:162%;
+	color:#333333; 
+	font-family:Tahoma,Arial,\5b8b\4f53;
+	-webkit-text-size-adjust:none;
+	background:none repeat scroll 0 0 #fff;
+	font:normal 100% Helvetica, Arial, sans-serif;
+
+}
+
+.clear{ 
+	zoom:1;
+	clear:both;
+}
+
+.clear:after{ 
+	display:block;
+	content:"\0020";
+	overflow:hidden;
+	height:0; 
+	clear:both;
+}
+
+div,form,img,ul,ol,li,dl,dt,dd,option,td,th{ 
+	margin:0;
+	padding:0;
+	border:0; 
+	list-style:none outside none;
+}
+
+h1,h2,h3,h4,h5,h6,p,span,blockquote,input,select,textarea{ 
+	margin:0;
+	padding:0;
+}
+
+table{
+	border-collapse:collapse;
+	border-spacing:0; 
+	border:0;
+}
+
+
+a{
+cursor:pointer;
+color:#069;
+text-decoration:none;
+}
+
+
+a:hover{
+color:#F45B0E;
+text-decoration:none;
+cursor:pointer;
+}
+
+.center{
+	text-align:center;
+}
+
+/*颜色*/
+
+/*=黑色=*/
+.black{
+	color:#373737;
+}
+
+/*=红色=*/
+.red{
+color:#ff3c3c;
+}
+.lightred{
+	color:#e45f48;
+}
+/*=橙色=*/
+.orange{
+color:#FF6E00;
+}
+
+/*=白色=*/
+.white{
+color:#ffffff;
+}
+
+/*=深灰色=*/
+.darkgray{
+color:#999999;
+}
+
+/*=灰色=*/
+.gray{
+color:#747474;
+}
+
+/*=浅灰色=*/
+.lightgray{
+color:#666666;
+}
+
+/*=绿色=*/
+.green{
+color:#82be55;
+}
+
+.lightgreen{
+color:#689700;
+}
+
+.blue{
+color:#1487c8;
+}
+.lightblue{
+color:#53a9ef;
+}
+/****/
+.bold{
+	font-weight:700;
+}
+
+.fontsize{
+	font-size:12px;
+}
+
+.button1{display:inline-block;font-weight:700;color:#D1040E;padding:2px 2px;height:20px;width:200px;line-height:20px;font-size:14px;text-align:center;border-radius:3px;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;cursor:pointer;outline:0 nones;}
+.button2{display:inline-block;font-weight:700;color:#ffffff;padding:2px 2px;height:20px;width:50px;line-height:20px;font-size:14px;text-align:center;border-radius:3px;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;cursor:pointer;outline:0 nones;}
+.button3{display:inline-block;font-weight:700;color:#D1040E;padding:2px 2px;height:20px;width:200px;line-height:20px;font-size:30px;text-align:center;border-radius:6px;-moz-border-radius:3px;-khtml-border-radius:3px;-webkit-border-radius:3px;cursor:pointer;outline:0 nones;}
+.button-orange{border:1px solid #ea6101;background:#f45b0e;background: -moz-linear-gradient(top,#ea6101,#f36c01 120%);background: -webkit-gradient(linear, 0 0, 0 120%, from(#ea6101), to(#f36c01));}
+.button-green{border:1px solid #066601;background:#066601;background: -moz-linear-gradient(top,#066601,#066601 120%);background: -webkit-gradient(linear, 0 0, 0 120%, from(#066601), to(#066601));}
+
+
+
+
+
+/*首页开始*/
+
+.container{
+	position:relative;
+	margin:0 auto;
+	width:100%;
+	background:none repeat scroll 0 0 #eceef1;
+}
+
+.select{
+	height:94px;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	top:0;
+	z-index:2;
+}
+
+.select .list{
+	margin:0 auto;
+	height:66px;
+	line-height:50px;
+	background:#3F4B5B;
+	border-bottom:1px solid #3F4B5B;
+	box-shadow: 0 1px 8px #3F4B5B;
+	z-index:5;
+	text-align:left;
+	position:relative;
+	padding-left:2.5%;
+}
+
+.select .list span img{
+	padding-top:10px;
+}
+
+.select .list a{
+	font-weight:700;
+	cursor:pointer;
+	text-decoration:none;
+	float:center;
+	padding-top:8px;
+}
+.select .list a.title{
+	padding-left:35%;
+}
+
+.select .list a span{
+	text-align:center;
+}
+
+.select .list a:hover{
+	background-color:transparent;
+	color:#b70b0b;
+}
+
+.select .list a img{
+	height:30px;
+	width:38px;
+	line-height:30px;
+	margin-top:20px;
+	position:absolute;
+	right:1%;
+}
+
+.quotation{
+	height:40px;
+	line-height:40px;
+	background:#ffffff;
+	padding-top:2px;
+	border-bottom:1px solid #d9d9d9;
+	box-shadow: 0 1px 6px #d9d9d9 inset;
+	z-index:3;
+}
+.quotation .btcprice{
+	font-size:0.8em;
+	padding-left:2.5%;
+	float:left;
+}
+
+.quotation .ltcprice{
+	padding-right:1.5%;
+	font-size:0.8em;
+	float:right;
+}
+
+.quotation li{
+	width:100%;
+	float:left;
+}
+
+.quotation-1{
+	height:120px;
+	line-height:40px;
+	background:#ffffff;
+	padding-top:2px;
+	border-bottom:1px solid #d9d9d9;
+	box-shadow: 0 1px 6px #d9d9d9 inset;
+	z-index:3;
+}
+.quotation-1 .btcprice{
+	font-size:0.8em;
+	padding-left:2.5%;
+	float:left;
+}
+
+.quotation-1 .ltcprice{
+	padding-right:1.5%;
+	font-size:0.8em;
+	float:right;
+}
+
+.quotation-1 li{
+	width:100%;
+	float:left;
+}
+
+.quotation .count{
+	position:absolute;
+	right:1%;
+	bottom:-10px;
+}
+
+.quotation .count li{
+	float:left;
+	margin-right:5px;
+}
+
+.quotation  li a{
+	width:100%;
+	display:inline-block;
+	color:#000;
+}
+
+.quotation  li a:hover{
+	color:#000;
+}
+
+.number{
+	height:100px;
+	padding-top:94px;
+}
+
+.number li{
+	height:50px;
+	line-height:50px;
+	border-bottom:1px solid #d9d9d9;
+	box-shadow: 0 1px 0px #ffffff;
+}
+
+.number li span.price{
+	float:right;
+	padding-right:2.5%;
+}
+
+.number li img{
+	width:30px;
+	height:30px;
+	float:left;
+}
+
+.number li span.btclogo{
+	padding-left:2.5%; 
+	width:30px;
+	height:30px;
+	display:inline-block;
+	float:left;
+	margin-top:10px;
+	margin-left:2.5%;
+}
+.number li span.ltclogo{
+	padding-left:2.5%;
+	width:30px;
+	height:30px;
+	display:inline-block;
+	float:left;
+	margin-top:10px;
+	margin-left:2.5%;
+}
+
+.bodywidth{
+	width:100%;
+}
+
+.chooseblock{
+	width:100%;
+	height:105px;
+}
+
+
+.chooseblock .grid{
+    color: #456A94;
+    display: block;
+    float: left;
+    height: 90px;
+    margin: 15px 0px 0px 2.5%;
+    position: relative;
+    text-align: center;
+    width:20%;
+}
+.chooseblock .grid-2{
+    color: #456A94;
+    display: block;
+    float: left;
+    height: 90px;
+    margin: 15px 0px 0px 5%;
+    position: relative;
+    text-align: center;
+    width:20%;
+}
+
+
+.chooseblock span{
+	display:inline-block;
+	height:normal;
+	width:100%;
+	text-align:center;
+}
+
+.chooseblock span.btctrade{
+	height:66px;
+	width:67px;
+	padding-bottom:5px;
+}
+.chooseblock span.ltctrade{
+	height:66px;
+	width:67px;
+	padding-bottom:5px;
+}
+.chooseblock span.entrust{
+	height:66px;
+	width:67px;
+	padding-bottom:5px;
+}
+.chooseblock span.bill{
+	height:66px;
+	width:67px;
+	padding-bottom:5px;
+}
+
+
+.introduce{
+	width:100%;
+	/*padding-top:15px;*/
+}
+.introduce li{
+	height:100px;
+	padding-top:15px;
+	width:100%;
+	display:block;
+}
+.introduce li.l1 img{
+	width:86px;
+	height:86px;
+	float:left;
+	padding-top:2px;
+	padding-left:2.5%;
+	max-width:100%;
+}
+.introduce li.l1 .span1{
+	float:left;
+	padding-left:3%;
+	width:66.25%;
+	font-size:0.875em;
+	padding-bottom:3px;
+}
+.introduce li.l1 .span2{
+	float:left;
+	padding-left:3%;
+	width:66.25%;
+	font-size:0.75em;
+}
+
+.introduce li.l1 .span3{
+	float:left;
+	padding-left:3%;
+	width:66.25%;
+	font-size:0.75em;
+	line-height:25px;
+}
+
+
+.introduce li.l2 img{
+	width:86px;
+	height:86px;
+	float:right;
+	padding-top:2px;
+	padding-right:2.5%;
+	max-width:100%;
+}
+.introduce li.l2 .span1{
+	float:left;
+	padding-left:2.5%;
+	width:66.25%;
+	font-size:0.875em;
+	padding-bottom:3px;
+}
+.introduce li.l2 .span2{
+	float:left;
+	padding-left:2.5%;
+	width:66.25%;
+	font-size:0.75em;
+	line-height:25px;
+}
+
+/**foot开始**/
+
+.last{
+	width:100%;
+	height:40px;
+	background:#f1f1f1;
+	line-height:40px;
+	margin-top:5px;
+	float:left;
+}
+
+.last li.load{
+	float:left;
+	padding-left:2.5%;
+	width:70%;
+}
+.last li.load a{
+	padding-left:3%;
+}
+.last li.return{
+	float:right;
+	padding-right:2.5%;
+
+}
+
+.last li.return a img{
+	padding-left:10px;
+	height:8px;
+}
+
+
+.foot{
+	width:100%;
+	height:60px;
+	padding-bottom:5px;
+	float:left;
+}
+
+.foot li{
+	text-align:center;
+	height:30px;
+	line-height:30px;
+}
+
+.foot span.standard{
+	font-size:0.75em;
+}
+
+.foot li a{
+	color:#2a8bcf;
+}
+
+.foot li a:hover{
+	color:#2a8bcf;
+}
+.foot li a.cur{
+	color:#333333;
+}
+
+
+/**foot结束**/
+/**登录开始**/
+
+.loginbanner{
+	width:100%;
+	height:50px;
+	text-align:center;
+	border-bottom:1px solid #d9d9d9;
+	box-shadow: 0 1px 5px #d9d9d9;
+	line-height:50px;
+	position:relative;
+}
+.loginbanner img{
+	height:30px;
+	left:1%;
+	margin-top:10px;
+	position:absolute;
+}
+
+.user{
+	width:100%;
+	text-align:center
+}
+
+.user input{
+	padding-left:35px;
+	height:40px;
+	border:1px solid #d9d9d9;
+	height:40px;
+	width:80%;
+}
+
+.user .load-1{
+	background:url("/images/user_n.png") no-repeat scroll transparent;
+	margin-top:20px;
+	background-position:3px;
+	color:#666666;
+}
+
+.user .load-2{
+	background:url("/images/user_h.png") no-repeat scroll transparent;
+	margin-top:20px;
+	background-position:3px;
+	color:#1478c8;
+}
+
+.user .password-1{
+	background:url("/images/password_n.png") no-repeat scroll transparent;
+	margin-top:20px;
+	background-position:3px;
+	color:#666666;
+}
+
+.user .password-2{
+	background:url("/images/password_h.png") no-repeat scroll transparent;
+	margin-top:20px;
+	background-position:3px;
+	color:#1478c8;
+}
+
+.user a:hover{
+	color:#ffffff;
+}
+
+.bluebutton{
+	display:inline-block;
+	font-weight:700;
+	font-size:0.75em;
+	color:#fff;
+	text-align:center;
+	width:80%;
+	height:45px;
+	line-height:45px;
+	background:#3f4b5b;
+	margin-top:15px;
+}
+
+.quickload{
+	width:100%;
+	padding-top:10px;
+}
+
+.quickload span{
+	padding-left:10%;
+	padding-bottom:10px;
+}
+
+.quickload a{
+	margin-top:10px;
+	height:50px;
+	width:50px;
+	display:inline-block;
+}
+
+.quickload a.quickQQ{
+	margin-left:10%;
+}
+.quickload a.quicksina{
+	margin-left:10px;
+}
+
+.Refresh{
+	width:100%;
+	padding-top:10px;
+}
+
+.Refresh a{
+	margin-left:10%;
+}
+
+/**登录结束**/
+/**BTC or LTC 交易**/
+
+.total{
+	width:100%;
+	margin-top:94px;
+}
+
+
+.total-1{
+	width:100%;
+	margin-top:174px;
+}
+
+.btcselect{
+	width:100%;
+	height:50px;
+}
+
+.btcselect a{
+	height:45px;
+	line-height:45px;
+	width:33.3333%;
+	border-bottom:5px solid #4aaae3;
+	float:left;
+	text-align:center;
+	background:#666666;
+	color:#ffffff;
+	font-size:1.5em;
+	font-weight:700;
+}
+
+.btcselect a.cur{
+	background:#4aaae3;
+}
+
+.tradeselect{
+	height:94px;
+	width:100%;
+	margin:0 auto;
+	position:fixed;
+	top:0;
+	z-index:2;
+}
+
+.tradeselect .list{
+	margin:0 auto;
+	height:50px;
+	line-height:50px;
+	background:#fff;
+	border-bottom:1px solid #d9d9d9;
+	box-shadow: 0 1px 8px #d9d9d9;
+	z-index:5;
+	text-align:center;
+	position:relative;
+}
+
+.tradeselect .list a{
+	font-weight:700;
+	cursor:pointer;
+	text-decoration:none;
+	float:center;
+	padding-top:8px;
+}
+.tradeselect .list a.title{
+	padding-left:35%;
+}
+
+.tradeselect .list a span{
+	text-align:center;
+}
+
+.tradeselect .list a:hover{
+	background-color:transparent;
+	color:#b70b0b;
+}
+
+.tradeselect .list a img{
+	height:30px;
+	width:38px;
+	left:1%;
+	line-height:30px;
+	margin-top:10px;
+	position:absolute;
+}
+
+.tradeQuotation{
+	height:400px;
+	width:100%;
+}
+
+.tradeQuotation li{
+	height:50px;
+	line-height:50px;
+	border-bottom:1px solid #d9d9d9;
+	box-shadow: 0 1px 0px #ffffff;
+	width:100%;
+}
+
+.tradeQuotation li span.price{
+	float:right;
+	padding-right:2.5%;
+}
+
+.tradeQuotation li span.price1{
+	float:right;
+	padding-right:2.5%;
+	width:50%;
+}
+
+.tradeQuotation li span.paddingleft{
+	padding-left:2.5%;
+}
+
+.tradeQuotation li input{
+	height:50px;
+	line-hright:50px;
+	width:100%;
+	text-align:right;
+	padding-right:3%;
+	border:none;
+}
+
+.buysell{
+	width:100%;
+	padding-top:20px;
+}
+
+.buysell table{
+	width:100%;
+	text-align:center;
+	border-bottom:1px solid #d9d9d9;
+}
+
+.buysell td{
+	width:33.3333333%;
+	height:40px;
+	line-height:40px;
+	border-top:1px solid #d9d9d9;
+}
+
+.buysell td.left{
+	padding-left:2%;
+	text-align:left;
+}
+
+.buysell td.center{
+	text-align:center;
+}
+
+.buysell td.right{
+	text-align:right;
+	padding-right:2%;
+}
+
+.buysell td.bordersellleft{
+	border-left:3px solid #FF3C3C;
+}
+
+.buysell td.borderbuyleft{
+	border-left:3px solid #82BE55;
+}
+
+.buysell td.borderbottom{
+	border-bottom:1px solid #d9d9d9;
+}
+
+.Prompt{
+	margin-top:10px;
+	height:20px;
+}
+
+.explain{
+	padding-left:2.5%;
+	height:40px;
+	line-height:20px;
+	border-bottom:1px solid #d9d9d9;
+}
+
+.none{
+	display:none;
+}
+
+/**BTC or LTC 交易结束**/
+/**委托页开始**/
+
+.Entrust{
+	width:100%;
+	height:50px;
+}
+
+.Entrust a{
+	height:45px;
+	line-height:45px;
+	width:50%;
+	border-bottom:5px solid #4aaae3;
+	float:left;
+	text-align:center;
+	background:#666666;
+	color:#ffffff;
+	font-size:1.5em;
+	font-weight:700;
+}
+
+.Entrust a.cur{
+	background:#4aaae3;
+}
+
+.EntrustPrice{
+	width:100%;
+}
+
+.EntrustPrice table{
+	width:100%;
+}
+
+.EntrustPrice table td{
+	width:33.333333%;
+	height:65px;
+	line-height:30px;
+	border-bottom:1px solid #d9d9d9;
+}
+
+.EntrustPrice table td.right{
+	text-align:right;
+	padding-right:2.5%;
+}
+
+.EntrustPrice table td.left{
+	text-align:left;
+	padding-left:2.5%;
+}
+
+.getmore{
+	width:100%;
+	line-height:20px;
+	margin-top:10px;
+	margin-bottom:5px;
+	text-align:center;
+}
+
+.getmore a{
+	margin-left:2.5%;
+}
+
+.getmore span{
+	margin-left:2.5%;
+}
+/**委托页面结束**/
+/**page页面**/
+
+.page{
+	width:100%;
+}
+
+.page ul{
+	float:right;
+	padding-right:2.5%;
+}
+
+.page li{
+	float:left;
+	font-size:2em;
+	padding-right:10px;
+}
+
+
+element.style {
+    color: #FFFFFF;
+}
+.page li a:hover, .page .current_ss {
+    background: none repeat scroll 0 0 #EA6302;
+    color: #FFFFFF;
+}
+.page li a, .pagel li a:hover, .page .current_ss {
+    border: 1px solid #CCCCCC;
+    color: #000000;
+    float: left;
+    padding: 2px 7px 0;
+    text-decoration: none;
+}
+
+/**page页面结束**/
+
+/***二次验证****/
+
+.user .after-d{
+	margin-left:10%;
+}
+
+.user .after-d .secondVerification{
+	height:32px;
+	line-height:32px;
+	padding-left:10px;
+	padding-right:5px;
+	color:#464646;
+	background:transparent;
+	border:1px solid #888888;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.user .after-d .ttitle1{
+	font-weight:700;
+	font-size:14px;
+	margin-top:15px;
+	display:block;
+}
+
+.user .after-d .ttitle4{
+	font-size:12px;
+	color:#cccccc;
+	padding-top:20px;
+	display:block;
+}
+
+.user .after-d .ttitle2{
+	font-weight:700;
+	font-size:16px;
+	color:#f9ac0d;
+	margin-top:10px;
+	padding-left:15px;
+	display:block;
+}
+
+.user .totpCodeError{
+	background:#fffbb5;
+	height:25px;
+	text-align:center;
+	color:#FF0000;
+	line-height:25px;
+	float:left;
+}
+
+.user .errorbgDiv{
+	height:25px;
+	line-height:25px;
+	float:left;
+}
+
+
+.button-blue1{
+	display:inline-block;
+	font-weight:700;
+	font-size:16px;
+	color:#fff;
+	text-align:center;
+	height:32px;
+	line-height:32px;
+	background:#1279b4;
+	width:80%;
+	margin:0 auto;
+}
+
+.button-blue1:hover{
+	color:#fff;
+	text-decoration: none;
+	background:#1487c8;
+	font-weight:700;
+	font-size:16px;
+	display:inline-block;
+}
+
+.nav_red{
+	color:#F00;
+	
+}
+
+.nav_green{
+	color:#390;
+	
+}

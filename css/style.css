@@ -1,0 +1,132 @@
+body{
+	background-color: #333;
+}
+
+#index {
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	background: #ECEEF1;
+}
+
+#index .header {
+	height: 66px;
+	background-color: #3F4B5B;
+	border-bottom: 1px solid #888888;
+}
+
+
+#index .header .logo {
+	background-image: url("../images/logo.png");
+	background-repeat: no-repeat;
+	background-position: left 13px;
+	width: 150px;
+	height: 66px;
+	position: absolute;
+	left: 3.5%;
+}
+
+#index .header .profile {
+	background-image: url("../images/icon.png");
+	background-repeat: no-repeat;
+	background-size: 440px;
+	background-position: -32px -408px;
+	width: 50px;
+	height: 60px;
+	position: absolute;
+	right: 2.5%;
+}
+
+#index .nav {
+	border-top: 1px solid #666666;
+	background-color: #3F4B5B;
+	text-align: center;
+	width: 100%;
+	padding: 20px 0;
+}
+
+#index .box {
+	width: 30%;
+	font-size: 1.3em;
+	padding: 20px 0;
+	border: 1px dashed #666;
+	display: inline-block;
+}
+#index .box:active {
+	width: 30%;
+	color: #3F4B5B;
+	font-size: 1.3em;
+	padding: 20px 0;
+	box-shadow: 1px #FFF;
+	background-color: #D9EDF7;
+	border: 1px solid #666;
+	display: inline-block;
+}
+
+#index .box span {
+	display: block;
+}
+
+
+/*#index .nav th {
+	vertical-align:bottom;
+	font-size: 1.3em;
+	height: 4em;
+}
+#index .nav th:active {
+	vertical-align:bottom;
+	font-size: 1.3em;
+	height: 4em;
+	background-color: #D9EDF7;
+}
+
+#index .nav td {
+	vertical-align:top;
+	font-size: 1.3em;
+	height: 4em;
+}
+#index .nav td:active {
+	vertical-align:top;
+	font-size: 1.3em;
+	height: 4em;
+	background-color: #D9EDF7;
+}*/
+
+
+#trade {
+	position: relative;
+}
+
+#trade .header {
+	height: 50px;
+	width: 100%;
+	position: relative;
+	background-color: #FFF;
+	border-bottom:1px solid #D9D9D9;
+	box-shadow: 0 1px 8px #D9D9D9;
+}
+
+#trade .header a {
+	width: 38px;
+	height: 50px;
+	left: 2%;
+	position: absolute;
+	display: inline-block;
+	background: no-repeat 0 14px url("../images/back.png");
+}
+
+#trade .header span {
+	height: 50px;
+	line-height: 50px;
+	font-size: 1.6em;
+	left: 40%;
+	position: absolute;
+	display: inline-block;
+}
+
+#trade .quotation {
+	height:36px;
+	line-height: 36px;
+	font-size: 1.2em;
+	background-color: #FFF;
+}
