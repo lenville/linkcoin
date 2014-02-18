@@ -159,7 +159,7 @@ body{
 #trade .nav a:nth-child(3) {width: 36%;}
 
 #trade .nav .current {
-	background-color: #204B5B;
+	background-color: #AA4B5B;
 }
 
 #trade .info {
@@ -208,12 +208,12 @@ body{
 }
 
 #trade .info .sell {
-	color: #ff3c3c;
-	border-left: 4px solid #F44;
+	color: #A45;
+	border-left: 4px solid #A45;
 }
 #trade .info .buy {
-	color: #4B4;
-	border-left: 4px solid #8F8;
+	color: #4A5;
+	border-left: 4px solid #4A5;
 }
 #trade .info .sell>span,
 #trade .info .buy>span {
@@ -227,6 +227,26 @@ body{
 
 
 
+#trade .transactions table {
+	width: 100%;
+	padding: 6px 3%;
+}
+
+#trade .transactions td {
+	width: 33%;
+	color: #3F4B5B;
+}
+
+#trade .transactions .sell td:nth-child(2) {
+	color: #A45;
+}
+#trade .transactions .buy td:nth-child(2) {
+	color: #4A5;
+}
+
+#trade .transactions td div {
+	height: 26px;
+}
 
 .footer {
 	text-align: center;

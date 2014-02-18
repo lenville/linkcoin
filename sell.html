@@ -21,33 +21,33 @@
 			</div>
 		</div>
 		<div class="nav">
-			<a class="current" href="">买入</a>
-			<a href="./sell.html">卖出</a>
+			<a href="./buy.html">买入</a>
+			<a class="current" href="#">卖出</a>
 			<a href="./trade.html">委托管理</a>
 		</div>
 		<div class="info">
 			<span>
-				<span class="left">您当前人民币余额</span>
-				<span class="right">58863.87元</span>
+				<span class="left">您当前BTC余额</span>
+				<span class="right">0฿</span>
 			</span>
 			<span>
-				<span class="left">可买BTC</span>
-				<span class="right">11.7903฿</span>
+				<span class="left">可卖人民币</span>
+				<span class="right">0.0￥</span>
 			</span>
 			<span>
-				<span class="left">出价￥/BTC</span>
+				<span class="left">售价￥/BTC</span>
 				<span class="right">
 					<input type="text" id="offer">
 				</span>
 			</span>
 			<span>
-				<span class="left">购买数量</span>
+				<span class="left">卖出数量</span>
 				<span class="right">
 					<input type="text" id="amount">
 				</span>
 			</span>
 			<span>
-				<span class="left">总金额</span>
+				<span class="left">兑换额</span>
 				<span class="right">
 					<input type="text" id="total">
 				</span>
@@ -59,7 +59,7 @@
 				</span>
 			</span>
 			<span>
-				<span id="submit">提交</span>
+				<span id="submit">立即卖出</span>
 			</span>
 			<span class="sell">
 				<span>卖 (5)</span>
@@ -122,32 +122,5 @@
 			</div>
 		</div>
 	</div>
-	<script src="./js/zepto.min.js"></script>
-	<script>
-		Zepto(function($){
-			$("#password").on("focus", function(){
-				if(this.value == "请输入交易密码"){
-					this.value = "";
-					this.type = "password";
-				}
-			});
-			$("#password").on("blur", function(){
-				if(this.value == ""){
-					this.value = "请输入交易密码";
-					this.type = "text";
-				}
-			})
-		})
-		// Zepto(function($){
-		// 	console.log($);
-		// 	$("#password").on("click", function() {
-		// 		console.log($(this).value);
-		// 		if($(this).value == "请输入交易密码") {
-		// 			$(this).value = "";
-		// 			$(this).type = "password";
-		// 		}
-		// 	})
-		// })
-	</script>
 </body>
 </html>
