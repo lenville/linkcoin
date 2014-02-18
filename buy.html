@@ -10,14 +10,144 @@
 	</head>
 	<body>
 		<div id="trade">
-			<div class="header">
-				<a href="index.html"></a>
-				<span>BTC交易</span>
+			<div class="fixed">
+				<div class="header">
+					<a href="index.html"></a>
+					<span>BTC交易</span>
+				</div>
+				<div class="quotation">
+					<span>BTC最新价:￥<span>4992.56</span></span>
+					<span>LTC最新价:￥<span>135.8</span></span>
+				</div>
 			</div>
-			<div class="quotation">
-				<span>BTC最新成交价<span>1000</span></span>
-				<span>BTC最新成交价<span>1000</span></span>
+			<div class="nav">
+				<a class="current" href="">买入</a>
+				<a href="./sell.html">卖出</a>
+				<a href="./trade.html">委托管理</a>
+			</div>
+			<div class="info">
+				<span>
+					<span class="left">您当前人民币余额</span>
+					<span class="right">58863.87元</span>
+				</span>
+				<span>
+					<span class="left">可买BTC</span>
+					<span class="right">11.7903฿</span>
+				</span>
+				<span>
+					<span class="left">出价￥/BTC</span>
+					<span class="right">
+						<input type="text" id="offer">
+					</span>
+				</span>
+				<span>
+					<span class="left">购买数量</span>
+					<span class="right">
+						<input type="text" id="amount">
+					</span>
+				</span>
+				<span>
+					<span class="left">总金额</span>
+					<span class="right">
+						<input type="text" id="total">
+					</span>
+				</span>
+				<span>
+					<span class="left">交易密码</span>
+					<span class="right">
+						<input type="text" id="password" value="请输入交易密码">
+					</span>
+				</span>
+				<span>
+					<span id="submit">提交</span>
+				</span>
+				<span class="sell">
+					<span>卖 (5)</span>
+					<span>￥4996.25</span>
+					<span>฿0.03</span>
+				</span>
+				<span class="sell">
+					<span>卖 (4)</span>
+					<span>￥4996</span>
+					<span>฿1.406</span>
+				</span>
+				<span class="sell">
+					<span>卖 (3)</span>
+					<span>￥4995</span>
+					<span>฿1.341</span>
+				</span>
+				<span class="sell">
+					<span>卖 (2)</span>
+					<span>￥4993.99</span>
+					<span>฿0.1</span>
+				</span>
+				<span class="sell">
+					<span>卖 (1)</span>
+					<span>￥4993.98</span>
+					<span>฿1.416</span>
+				</span>
+				<span class="buy">
+					<span>买 (1)</span>
+					<span>￥4987.26</span>
+					<span>฿0.519</span>
+				</span>
+				<span class="buy">
+					<span>买 (2)</span>
+					<span>￥4987.05</span>
+					<span>฿0.01</span>
+				</span>
+				<span class="buy">
+					<span>买 (3)</span>
+					<span>￥4986.01</span>
+					<span>฿1.0</span>
+				</span>
+				<span class="buy">
+					<span>买 (4)</span>
+					<span>￥4986</span>
+					<span>฿2.0</span>
+				</span>
+				<span class="buy">
+					<span>买 (5)</span>
+					<span>￥4985.03</span>
+					<span>฿0.7</span>
+				</span>
+				<!-- <span class="clearfix"></span> -->
+				<div class="footer">
+					<!-- <div class="func"></div> -->
+					<div class="switch">
+						<a href="">手机版</a>
+						<a href="">电脑版</a>
+					</div>
+					<div class="copyright">©2014 Buycoin.tk Inc. All Rights Reserved LinkCoin</div>
+				</div>
 			</div>
 		</div>
+		<script src="./js/zepto.min.js"></script>
+		<script>
+			Zepto(function($){
+				$("#password").on("focus", function(){
+					if(this.value == "请输入交易密码"){
+						this.value = "";
+						this.type = "password";
+					}
+				});
+				$("#password").on("blur", function(){
+					if(this.value == ""){
+						this.value = "请输入交易密码";
+						this.type = "text";
+					}
+				})
+			})
+			// Zepto(function($){
+			// 	console.log($);
+			// 	$("#password").on("click", function() {
+			// 		console.log($(this).value);
+			// 		if($(this).value == "请输入交易密码") {
+			// 			$(this).value = "";
+			// 			$(this).type = "password";
+			// 		}
+			// 	})
+			// })
+		</script>
 	</body>
 </html>

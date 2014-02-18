@@ -34,6 +34,10 @@ body {
 	background: none repeat scroll 0 0 #fff;
 }
 
+a {
+	text-decoration: none;
+}
+
 /**
  * @modules	CSS Layout
  */
@@ -115,4 +119,14 @@ body {
 	-moz-box-flex: 1;
 	-o-box-flex: 1;
 	box-flex: 1;
+}
+
+.left {
+	float: left;
+	text-align: left;
+}
+
+.right {
+	float: right;
+	text-align: right;
 }
